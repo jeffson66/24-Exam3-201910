@@ -32,6 +32,23 @@ def run_test_shape():
 
 
 def shape(n):
+    for k in range(n):
+        print((n-k-1)*' ',end='')
+        for j in range(k+1):
+            if j+1>10:
+                print(j+1-10, end='')
+            else:
+                print(j + 1, end='')
+        print(' ', end='')
+        print(k*'*'+2*'*', end='')
+        print(' ', end='')
+        for a in range(n-k):
+            if n - k>10:
+                print(n-k-10, end='')
+            else:
+                print(n - k, end='')
+            k = k +1
+        print()
     ####################################################################
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.

@@ -8,6 +8,7 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
 
 import time
 import testing_helper
+import math
 
 
 def main():
@@ -73,6 +74,15 @@ def run_test_problem2():
     
     
 def problem2(sequence):
+    j = 0
+    for k in range(len(sequence)):
+
+        if math.fabs(sequence[j]) >= math.fabs(sequence[k]):
+            pass
+        else:
+            j = k
+    return j
+
     """
     What comes in:
       -- An non-empty sequence of integers with no duplicates.

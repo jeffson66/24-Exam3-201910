@@ -199,6 +199,15 @@ def run_test_problem3():
 
 
 def problem3(seq_of_seq):
+
+    for k in range(len(seq_of_seq)):
+        for j in range(len(seq_of_seq[k])):
+            if is_prime(seq_of_seq[k][j]) == True:
+                return seq_of_seq[k]
+            if is_prime(seq_of_seq[k][j]) == False:
+                pass
+
+    return -1
     """
     What comes in:
       -- A sequence of sub-sequences of integers.

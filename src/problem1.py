@@ -68,6 +68,13 @@ def run_test_problem1():
 
 
 def problem1(numbers):
+    sum = 0
+    a = int(len(numbers) / 3)
+    for j in range(int(len(numbers)/3)):
+
+         sum = sum + numbers[a]
+         a = a + 1
+    return sum
     """
     What comes in:
       -- A non-empty sequence of numbers, with the sequence having a length
